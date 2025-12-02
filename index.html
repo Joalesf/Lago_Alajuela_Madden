@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santuario Ecológico | Madden</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="ecology-and-environment.png" type="image/png">
+</head>
+
+<!-- Google Translate oculto -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'en,es',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div class="flag-selector">
+    <img src="https://flagcdn.com/es.svg" onclick="changeLang('es')" alt="Español">
+    <img src="https://flagcdn.com/gb.svg" onclick="changeLang('en')" alt="English">
+</div>
+<script>
+function changeLang(lang) {
+    const combo = document.querySelector(".goog-te-combo");
+    if (combo) {
+        combo.value = lang;
+        combo.dispatchEvent(new Event("change"));
+    }
+}
+</script>
+<style>
+.flag-selector {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 99999;
+}
+
+.flag-selector img {
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.flag-selector img:hover {
+    transform: scale(1.1);
+}
+</style>
+
+
+
+<body>
+    <section id="hero-main" class="hero-section dark-theme" style="background-image: url('maxresdefault.jpg');">
+        <div class="hero-overlay"></div> <div class="container hero-content-wrapper">
+            <h1>Terreno Exclusivo 50,000 m² (12 acre)</h1> 
+            <h2> Cerca Parque Nacional Chagres </h2>
+            <p class="tagline">Un exclusivo santuario ecológico a pocos metros del Lago Madden, a solo minutos de la Ciudad de Panamá y Colón. Oportunidad única de inversión en Panamá.</p>
+            
+            <div class="cta-buttons">
+                <a href="#mapa" class="button primary">Ver Ubicación</a>
+                <a href="#contacto" class="button secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section id="carrusel-profesional" class="carrusel-section">
+        <div class="carrusel-track">
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="produccion.HEIC" alt="biodiversidad" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>Naturaleza Pura</h3>
+                    <p>Rodeado de árboles exóticos y biodiversidad.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="COFFE.HEIC" alt="Coffe" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>La finca donde nace el café</h3>
+                    <p>Adquirir este terreno no es solo comprar una propiedad es asegurar un ecosistema productivo y ético.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="5CAR.HEIC" alt="Terreno" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>Gran oportunidad de inversión</h3>
+                    <p>Adéntrate en la tranquilidad y el potencial de este hermoso lote arbolado.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="caff12.HEIC" alt="Fértil" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>De la cosecha a la taza</h3>
+                    <p>Gran terreno con suelo fértil, ideal para productores.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="2Carru.HEIC" alt="Ubicación" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>¡Ubicación Premium!</h3>
+                    <p>Lote con acceso directo a carretera asfaltada y servicios.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="join.HEIC" alt="Agroforestal" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>Potencial Agroforestal</h3>
+                    <p>Senderos naturales y bosques.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="vistas.HEIC" alt="Ambiental" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>Diseño Arquitectónico Ecológico</h3>
+                    <p>Espacio ideal para un proyecto de bajo impacto ambiental.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="cerca.HEIC" alt="Rutas" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>Rutas de senderismo privadas</h3>
+                    <p>Explore el terreno y sus alrededores a pie.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="psio.HEIC" alt="Propiedad" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>¡Inicia tu proyecto agropecuario!</h3>
+                    <p>Lote con galera rústica existente.</p>
+                </div>
+            </div>
+
+            <div class="carrusel-slide">
+                <div class="carrusel-overlay"></div>
+                <img src="alt.HEIC" alt="Finca" class="slide-image">
+                <div class="carrusel-content container">
+                    <h3>Finca cafetalera productiva</h3>
+                    <p>Terreno con café cosechable</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="carrusel-dots">
+            </div>
+    </section>
+    
+    <div class="grid-sections">
+        <section class="highlight-section image-feature light-theme">
+            <img src="TERRENO 1.HEIC" alt="Vista del Terreno">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>¿Porque invertir aquí?</h3>
+                    <p>Tierra fértil y seguridad en tiempos de tasas altas</p>
+                    <div class="cta-buttons small">
+                        <a href="#contacto" class="button secondary">Agendar una cita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight-section image-feature dark-theme">
+            <img src="teerreno 0.HEIC" alt="Diseño">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Ubicación Estratégica</h3>
+                    <p>Un entorno natural unico y rodeado de naturaleza.</p>
+                    <div class="cta-buttons small">
+                        <a href="#tabla-info" class="button secondary">Especificaciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="grid-sections dual-feature">
+        <section class="feature-box image-feature light-theme">
+            <img src="Coli.JPG" alt="Acceso Privado">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Zonificación</h3>
+                    <p>Uso privilegiado del suelo y zonificación de vivienda ecológica de baja densidad.</p>
+                    <div class="cta-buttons small">
+                        <a href="#mapa" class="button secondary">Descubrir Ubicación</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-box image-feature light-theme">
+            <img src="IMG_8313.HEIC" alt="ParqueNacional">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Cerca de el parque Nacional Chagres</h3>
+                    <p>Disfruta de el parque Nacional y todas sus atractivos</p>
+                    <div class="cta-buttons small">
+                        <a href="#video-reels" class="button secondary">Más Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="grid-sections dual-feature">
+        <section class="feature-box image-feature dark-theme">
+            <img src="entrada.HEIC" alt="Precio">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Mágnifico precio</h3>
+                    <p>A tan solo 11 $ por metro cuadrado</p>
+                    <div class="cta-buttons small">
+                        <a href="#contacto" class="button secondary">Contactanos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-box image-feature dark-theme">
+            <img src="colidantes.png" alt="Reserva natural">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Colindante con áreas protegidas</h3>
+                    <p>Vivienda ecológica, ubicación estratégica cerca del Lago Madden.</p>
+                    <div class="cta-buttons small">
+                        <a href="#video-reels" class="button secondary">Ver Ecosistema</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+            <div class="grid-sections dual-feature">
+        <section class="feature-box image-feature dark-theme">
+            <img src="indios.jpg" alt="Aborígenes y cultura">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Cerca de grandes atractivos turísticos</h3>
+                    <p>Ubicado a orillas del Lago Madden, este lugar te permite disfrutar de la naturaleza y realizar visitas a atractivos turísticos cercanos como senderos ecológicos, miradores panorámicos y actividades acuáticas en el lago.</p>
+                    <div class="cta-buttons small">
+                        <a href="#video-reels" class="button secondary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-box image-feature dark-theme">
+            <img src="prueba.png" alt="Reserva natural">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Propiedad dentro de una sociedad anónima de reforestación</h3>
+                    <p> Mayor facilidad para trámites de compra y negocios</p>
+                    <div class="cta-buttons small">
+                        <a href="#contacto" class="button secondary">Agendar una Cita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <div class="grid-sections dual-feature">
+        <section class="feature-box image-feature dark-theme">
+            <img src="IMG_9515.HEIC" alt="Seguridad y control">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Terreno ideal para Cabañas</h3>
+                    <p>Ecoturismo y retiros naturales</p>
+                    <div class="cta-buttons small">
+                        <a href="#informacion" class="button secondary">Especificaciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-box image-feature dark-theme">
+            <img src="corral.HEIC" alt="Reserva natural">
+            <div class="content-overlay">
+                <div class="content">
+                    <h3>Lote ídeal para cría de animales dómesticos</h3>
+                    <div class="cta-buttons small">
+                        <a href="#video-reels" class="button secondary">Ver Ecosistema</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section id="video-reels" class="video-reels-section dark-theme">
+        <div class="container">
+            <h2>La Experiencia en Video </h2>
+            <p class="subtitle">Un adelanto de lo que te espera y la verdadera sensación del lugar.</p>
+            
+            <div class="reels-slider">
+                <div class="reels-track">
+                    <div class="reel-item">
+                        <video id="reel-video-0" controls muted playsinline poster="">
+                            <source src="1Rell.MOV" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+
+                    <div class="reel-item">
+                        <video id="reel-video-1" controls muted playsinline poster="">
+                            <source src="IMG_6319.MOV" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+
+                    <div class="reel-item">
+                        <video id="reel-video-2" controls muted playsinline poster="">
+                            <source src="IMG_6233.MP4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+
+                    
+                </div>
+
+                <button class="reels-nav reels-prev">‹</button>
+                <button class="reels-nav reels-next">›</button>
+            </div>
+
+            <div class="reels-dots">
+                </div>
+            
+            <a href="#contacto" class="button primary reels-cta">Solicitar Acceso a la Galería Completa</a>
+        </div>
+    </section>
+    
+    <section id="mapa" class="map-section dark-theme">
+        <div class="container">
+            <h2>📍Ubicación Exclusiva</h2>
+            <p class="subtitle">Ubicada entre dos centros urbanos principales, rodeada de bosque y agua.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d935.7842501187201!2d-79.60596352645877!3d9.245617589454268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTQnNDQuMiJOIDc5wrAzNicxOS43Ilc!5e1!3m2!1ses-419!2spa!4v1764650807598!5m2!1ses-419!2spa"
+                    width="100%" 
+                    height="500" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="informacion" class="info-contact-section dark-theme">
+        <div class="container">
+            <h2>Información Detallada</h2>
+            <div id="tabla-info" class="details-card">
+                <h3> Especificaciones del Terreno</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ubicación</td>
+                            <td>Lago Alajuela/Madden, Panamá</td>
+                        </tr>
+                        <tr>
+                            <td>Metraje Total</td>
+                            <td>50,000 m² (5 Hectáreas)</td>
+                        </tr>
+                        <tr>
+                            <td>Proximidad al lago</td>
+                            <td>Aproximadamente 100 metros de la rampa pública</td>
+                        </tr>
+                        <tr>
+                            <td>Clasificación</td>
+                            <td>Residencial baja densidad, Eco-turístico, Plantación, Agroturismo.</td>
+                        </tr>
+                        <tr>
+                            <td>Acceso</td>
+                            <td>Vía pavimentada y Acceso privado.</td>
+                        </tr>
+                        <tr>
+                            <td>Servicios Básicos</td>
+                            <td>Luz, agua, internet de fibra óptica, estación de policías, escuelas, centro de salud, estaciones de buses.</td>
+                        </tr>
+                        <tr>
+                            <td>Precio</td>
+                            <td>11 $ por metro cuadrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <section id="contacto" class="contact-form-section light-theme">
+        <div class="google-form-container">
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdAxfB1ERqcd0tBdKRTa1Z9ltx7dYEUv83euH6tXYMx2kEJdw/viewform?embedded=true"
+            width="100%" 
+            height="700" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Cargando…
+        </iframe>
+    </div>
+    </section>
+    </div>
+
+<div class="floating-buttons-container">
+    <a href="https://wa.me/50762068631?text=Hola%2C%20estoy%20interesado%20en%20el%20terreno%20del%20lago%20Alajuela%2C%20Madden.%20%C2%BFMe%20puede%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F%20Gracias." 
+    class="floating-button whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <span class="icon">💬</span> Chatear WhatsApp
+    </a>
+</div>
+
+    <footer>
+        <p>© 2025 Reforestadora La Colonense S.A. | Lago Alajuela/Madden. | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
