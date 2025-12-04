@@ -17,13 +17,13 @@
     <meta property="og:title" content="Santuario Ecológico | Terreno de 50,000 m² en Madden">
     <meta property="og:description" content="Un terreno exclusivo rodeado de naturaleza, ideal para proyectos ecológicos, inversión o agricultura. Ubicado a metros del Lago Madden.">
 
-    <meta property="og:image" content="https://panamamaddenlakerealestate.tech//portada.jpg">
+    <meta property="og:image" content="https://panamamaddenlakerealestate.tech/portada.webp">
     <meta property="og:url" content="https://panamamaddenlakerealestate.tech/">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Santuario Ecológico | Terreno en Madden">
     <meta name="twitter:description" content="Terreno exclusivo de 50,000 m² cerca del Lago Madden. Inversión ecológica en Panamá.">
-    <meta name="twitter:image" content="https://panamamaddenlakerealestate.tech/portada.jpg">
+    <meta name="twitter:image" content="https://panamamaddenlakerealestate.tech/portada.webp">
 
 
     <link rel="stylesheet" href="style.css">
@@ -38,17 +38,20 @@
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'es',
-        includedLanguages: 'en,es',
+        includedLanguages: 'en,es,fr',  
         autoDisplay: false
     }, 'google_translate_element');
 }
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <div class="flag-selector">
     <img src="https://flagcdn.com/es.svg" onclick="changeLang('es')" alt="Español">
     <img src="https://flagcdn.com/gb.svg" onclick="changeLang('en')" alt="English">
+    <img src="https://flagcdn.com/fr.svg" onclick="changeLang('fr')" alt="Français">
 </div>
+
 <script>
 function changeLang(lang) {
     const combo = document.querySelector(".goog-te-combo");
@@ -58,6 +61,7 @@ function changeLang(lang) {
     }
 }
 </script>
+
 <style>
 .flag-selector {
     position: fixed;
@@ -80,8 +84,6 @@ function changeLang(lang) {
     transform: scale(1.1);
 }
 </style>
-
-
 
 <body>
     <section id="hero-main" class="hero-section dark-theme" style="background-image: url('maxresdefault.webp');">
