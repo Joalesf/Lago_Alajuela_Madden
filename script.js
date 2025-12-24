@@ -4,7 +4,7 @@ const carruselTrack = document.querySelector('.carrusel-track');
         const dotsContainer = document.querySelector('.carrusel-dots');
         const totalSlides = slides.length; 
         let currentIndex = 0;
-        const intervalTime = 5500; 
+        const intervalTime = 4300; 
         let carruselInterval; 
 
         function createDots() {
@@ -105,6 +105,30 @@ const carruselTrack = document.querySelector('.carrusel-track');
             let nextIndex = (reelIndex + 1) % totalReels;
             moveToReel(nextIndex);
         });
+
+        const track = document.querySelector('.carrusel-track');
+        const slides = document.querySelectorAll('.carrusel-slide');
+        const prevBtn = document.querySelector('.carrusel-btn.prev');
+        const nextBtn = document.querySelector('.carrusel-btn.next');
+
+        let index = 0;
+
+        function updateCarousel() {
+        const width = slides[0].offsetWidth;
+        track.style.transform = `translateX(-${index * width}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+        index = (index + 1) % slides.length;
+        updateCarousel();
+        }); 
+
+        prevBtn.addEventListener('click', () => {
+        index = (index - 1 + slides.length) % slides.length;
+        updateCarousel();
+        });
+
+        window.addEventListener('resize', updateCarousel);
 
         createReelDots();
         moveToReel(0); 
